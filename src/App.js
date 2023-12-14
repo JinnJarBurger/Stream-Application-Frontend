@@ -11,6 +11,7 @@ function App() {
         try {
             const response = await api.get("/api/v1/movies");
             setMovies(response.data);
+            console.log(response.data)
         } catch (e) {
             console.log(e);
         }
